@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\begin{document}
+	\centering
+	\section*{Algorithms using \texttt{algorithm} and \texttt{algorithmic}}
+	\begin{algorithm}
+		\caption{Example Algorithm}
+		\begin{algorithmic}[1]
+			\Require $n \geq 0$
+			\Ensure $y=x^n$
+			\State $y \gets 1$
+			\State $x \gets x_0$
+			\While{$n \neq 0$}
+				\If{$n$ is even}
+					\State $x \gets x \times x$
+					\State $n \gets n/2$
+				\Else
+					\State $y \gets y \times y$
+					\State $n \gets n-1$
+				\EndIf
+			\EndWhile
+		\end{algorithmic}
+	\end{algorithm}
+\end{document}

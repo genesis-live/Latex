@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{tikz}
+\begin{document}
+	\centering
+	\begin{tikzpicture}[
+			level 1/.style={sibling distance=4cm},
+			level 2/.style={sibling distance=2.5cm},
+			every node/.style={draw, circle, minimum size=1cm}
+		]
+	\node {Root}
+	child {node {Child 1}{
+		child {node {GC1}}
+		child {node {GC2}}
+		}
+	}
+	child {node{Child 2}{
+		child {node {GC3}}
+		child {node {GC4}}
+		}
+	};
+	\end{tikzpicture}
+\end{document}
