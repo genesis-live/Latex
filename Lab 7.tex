@@ -2,18 +2,26 @@
 \usepackage{amsmath}
 \begin{document}
 	\title{Mathematical Equations}
-	\author{Author}
+	\author{HJ}
 	\date{\today}
 	\maketitle
 	\section*{Equations}
 	\subsection*{Equation 1}
-	The quadratic equation is:
-	\begin{equation}
-		\frac{{-b\pm\sqrt{b^2-4ac}}}{2a}=\frac{-2\pm\sqrt{-2^2-4*(1)(-8)}}{(2)(1)}=\frac{2\pm\sqrt{4+32}}{2}
-	\end{equation}
+	\begin{align*}
+		x &=\frac{-b\pm \sqrt{{b^2-4ac}}}{2a} \\
+		  &=\frac{-2\pm \sqrt{2^2-4*(1)(-8)}}{(2)(1)} \\
+		  &=\frac{-2\pm \sqrt{4+32}}{2} \\
+		x &=2 \quad \text{or} \quad x = -4
+	\end{align*}
 	\subsection*{Equation 2}
-	The second equation is:
 	\begin{equation}
 		\frac{d^2y}{dx^2}+\omega^2y=0
 	\end{equation}
+	\subsection*{Equation 3}
+	\begin{align*}
+		\varphi_\sigma^\lambda A_t
+		& =\sum_{\pi\epsilon C_t}sgn(\pi)\varphi_\sigma^\lambda 	\varphi_\pi^\lambda \\
+		& =\sum_{\pi\epsilon C_t} sgn(\sigma^{-1}\tau\sigma) \varphi_\sigma^\lambda \varphi_{\sigma^{-1\tau\sigma}} \\
+		& =A_{\sigma t \varphi_\sigma^\lambda}
+	\end{align*}
 \end{document}
